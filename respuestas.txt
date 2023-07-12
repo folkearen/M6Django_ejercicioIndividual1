@@ -1,0 +1,37 @@
+_________________________________________________________
+Verifique ambas versiones con los comandos respectivos.
+_________________________________________________________
+django-admin --version
+4.2.3
+py --version
+Python 3.11.0
+
+_________________________________________________________________________________________________________
+Identifique qué paquetes se descargan automáticamente. Investigue la utilidad que tienen estos paquetes.
+_________________________________________________________________________________________________________
+
+asgiref==3.7.2: Este paquete proporciona una implementación de referencia para el protocolo ASGI (Asynchronous Server Gateway Interface). ASGI es un estándar que permite a Django interactuar con servidores web compatibles con ASGI, como Gunicorn o Daphne, para manejar solicitudes y respuestas asincrónicas de manera eficiente.
+
+Django==4.2.3: Este paquete es el propio framework de desarrollo web Django. Django proporciona una amplia gama de herramientas y funcionalidades para crear aplicaciones web de manera rápida y segura. Incluye características como ORM (Object-Relational Mapping) para trabajar con la base de datos, un sistema de enrutamiento de URL, un motor de plantillas, un sistema de autenticación, soporte para internacionalización y muchas otras utilidades útiles para el desarrollo web.
+
+sqlparse==0.4.4: Este paquete es una biblioteca de análisis de SQL para Python. Proporciona funciones para analizar y formatear consultas SQL. Django utiliza sqlparse para analizar y formatear consultas SQL generadas por el ORM de Django, lo que facilita la depuración y comprensión de las consultas ejecutadas en la base de datos.
+
+tzdata==2023.3: Este paquete contiene información actualizada sobre las zonas horarias (timezones). Django utiliza esta información para manejar correctamente las conversiones de fecha y hora en diferentes zonas horarias. Actualizar regularmente el paquete tzdata asegura que Django tenga la información más actualizada sobre las zonas horarias y pueda realizar cálculos precisos relacionados con fechas y horas.
+
+
+___________________________________________________________________________________________________________
+¿Qué facilidades nos proporciona Django?
+Con relación al levantamiento de un servidor. ¿Existe una forma de realizarlo con Python y sin Django?
+¿Qué desventajas nos trae este tipo de proyectos sin Django?
+____________________________________________________________________________________________________________
+Django proporciona varias facilidades para el desarrollo web, incluyendo un sistema de enrutamiento de URL, un ORM (Object-Relational Mapping) para facilitar la interacción con la base de datos, un panel de administración preconstruido y personalizable, características de seguridad incorporadas y un sistema de plantillas para la separación de la lógica de presentación. Estas facilidades agilizan el desarrollo y ayudan a crear aplicaciones web seguras y escalables.
+
+Si bien es posible levantar un servidor web básico utilizando solo Python sin Django, el uso de Django ofrece ventajas adicionales. Django establece una estructura de proyecto bien definida, proporciona funcionalidades listas para usar, cuenta con una comunidad activa y una documentación completa. Además, ofrece un mayor nivel de abstracción y aborda desafíos comunes, lo que resulta en un desarrollo más eficiente y un código más limpio y mantenible.
+
+Sin Django, los proyectos pueden requerir más tiempo de desarrollo, ya que muchas funcionalidades básicas deben ser implementadas manualmente. También se puede enfrentar una menor abstracción y estructura en el proyecto, lo que puede afectar la legibilidad y mantenibilidad del código a largo plazo.
+
+____________________________________________________
+Indague en la utilidad de django-admin startproject
+____________________________________________________
+django-admin startproject es un comando de línea de comandos de Django que se utiliza para crear un nuevo proyecto Django. Al ejecutar este comando, se genera una estructura de directorios organizada y se crean los archivos de configuración esenciales, como settings.py y urls.py. Además, se crea el archivo manage.py, que actúa como punto de entrada para administrar el proyecto y ejecutar tareas como iniciar el servidor de desarrollo y aplicar migraciones. En resumen, django-admin startproject proporciona una forma rápida y conveniente de configurar y comenzar a desarrollar un nuevo proyecto Django, estableciendo una estructura adecuada y generando los archivos iniciales necesarios.
+
